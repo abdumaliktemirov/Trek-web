@@ -79,7 +79,7 @@ button {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 /* TREK adaptation */
@@ -208,10 +208,9 @@ button {
 
 .header-logistics__reach {
     display: flex;
-    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 
 .header-logistics_card {
@@ -296,7 +295,7 @@ button {
     top: 0;
     right: -5px;
     width: 2px;
-    height: 49px;
+    height: 44px;
     background: #143AA2;
 }
 
@@ -591,6 +590,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 260px 0 60px 0;
 }
 
 .news-warp__title h2 {
@@ -600,20 +600,189 @@ button {
     font-weight: 600;
     line-height: 110%;
 }
-.news-warp__title a{
+
+.news-warp__title a {
     color: var(--unnamed, #143AA2);
     font-size: 20px;
     font-family: "Inter";
     font-weight: 600;
     line-height: 110%;
-    text-decoration-line: underline;  
+    text-decoration-line: underline;
 }
 
+.news-info__data {
+    color: var(--unnamed, #143AA2);
+    font-size: 18px;
+    font-family: "Inter";
+    font-weight: 600;
+    margin-bottom: 20px;
+}
 
+.news-info__red {
+    color: var(--unnamed, #C2202E);
+    font-size: 18px;
+    font-family: "Inter";
+    font-weight: 600;
+    margin-bottom: 40px;
+}
 
+.news-card__blog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 380px;
+    height: 431px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
+.news-card__blog::before {
+    position: absolute;
+    content: "";
+    top: -22px;
+    left: -2px;
+    width: 2px;
+    height: 452px;
+    background: #143AA2;
+}
 
+.news-card__blog::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: 8px;
+    width: 374px;
+    height: 2px;
+    background: #143AA2;
+}
 
+.news-warp__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
 
+.news-warp__text p {
+    color: var(--unnamed, #111D4A);
+    font-size: 16px;
+    font-family: "Inter";
+    line-height: 130%;
+    width: 340px;
+}
+
+.news-warp__button a {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    color: var(--unnamed, #143AA2);
+    font-size: 14px;
+    font-family: "Inter";
+    line-height: 130%;
+    text-decoration-line: underline;
+}
 
 /* News seris end */
+
+/* Important seris start */
+
+.important-warp__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 260px 0 60px 0;
+}
+
+.important-warp__title h2 {
+    color: var(--unnamed, #143AA2);
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.important-warp__title a {
+    color: var(--unnamed, #143AA2);
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 600;
+    line-height: 110%;
+    text-decoration-line: underline;
+}
+
+.important-info__data {
+    color: var(--unnamed, #143AA2);
+    font-size: 18px;
+    font-family: "Inter";
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.important-info__red {
+    color: var(--unnamed, #C2202E);
+    font-size: 18px;
+    font-family: "Inter";
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.important-card__blog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 380px;
+    height: 431px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.important-card__blog::before {
+    position: absolute;
+    content: "";
+    top: -22px;
+    left: -2px;
+    width: 2px;
+    height: 452px;
+    background: #143AA2;
+}
+
+.important-card__blog::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: 8px;
+    width: 374px;
+    height: 2px;
+    background: #143AA2;
+}
+
+.important-warp__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.important-warp__text p {
+    color: var(--unnamed, #111D4A);
+    font-size: 16px;
+    font-family: "Inter";
+    line-height: 130%;
+    width: 340px;
+}
+
+.important-warp__button a {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    color: var(--unnamed, #143AA2);
+    font-size: 14px;
+    font-family: "Inter";
+    line-height: 130%;
+    text-decoration-line: underline;
+}
+/* Important seris end */
