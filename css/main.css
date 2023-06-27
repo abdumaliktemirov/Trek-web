@@ -1,9 +1,60 @@
-* {
-    padding: 0;
+body {
     margin: 0;
-    box-sizing: border-box;
-    list-style: none;
+    padding: 0;
+    font-family: '"Inter"', sans-serif;
+    padding-bottom: 100px;
+}
+
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
     text-decoration: none;
+    line-height: 1.2;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+button:focus,
+textarea:focus,
+select:focus {
+    outline: none !important;
+    -webkit-appearance: none;
+    box-shadow: none;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+a:active,
+a:focus {
+    outline: 0;
+    outline: none !important;
+    border: none;
+    -moz-outline-style: none;
+}
+
+.wrapper {
+    overflow: hidden;
+    margin-bottom: 1000px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -18,8 +69,551 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+a,
+button {
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    border: solid 1px black;
 }
+
+/* TREK adaptation */
+.trek-card__name {
+    color: var(--unnamed, #143AA2);
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+/* TREK adaptation */
+
+/* Header seris start */
+
+.header-nav {
+    background: #143AA2;
+}
+
+.header-items {
+    padding: 11px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-items a {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Inter";
+    line-height: 130%;
+}
+
+.header-logistics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logistics__info {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.header-info__email a {
+    color: var(--unnamed, #143AA2);
+    font-size: 16px;
+    font-family: "Inter";
+    line-height: 130%;
+}
+
+.header-info__whatsap {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-whatsap__us span {
+    color: var(--unnamed, #143AA2);
+    font-size: 12px;
+    font-family: "Inter";
+    font-weight: bold;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-info__call a {
+    color: var(--unnamed, #143AA2);
+    font-size: 12px;
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+.header-info__call span {
+    color: var(--unnamed, #143AA2);
+    font-size: 12px;
+    font-family: "Inter";
+    font-weight: 500;
+    display: block;
+}
+
+.header-info__button button {
+    width: 155px;
+    height: 40px;
+    border-radius: 2px;
+    background: #C2202E;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+.header-info__button {
+    position: relative;
+    transition: 0.4s;
+}
+
+.header-info__button:hover {
+    transform: scale(1.1);
+}
+
+.header-info__button button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -4%;
+    width: 2px;
+    height: 45px;
+    background: #143AA2;
+}
+
+.header-info__button button::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -6px;
+    width: 161px;
+    height: 2px;
+    background: #143AA2;
+}
+
+.header-logistics__reach {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header-logistics_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 175px;
+    height: 118px;
+    position: relative;
+}
+
+.header-logistics__name {
+    width: 165px;
+    color: var(--unnamed, #143AA2);
+    font-size: 12px;
+    font-family: "Inter";
+    text-align: center;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.header-logistics_card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -4%;
+    width: 2px;
+    height: 110px;
+    background: #143AA2;
+}
+
+.header-logistics_card::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    right: -6px;
+    width: 172px;
+    height: 2px;
+    background: #143AA2;
+}
+
+/* Header seris end */
+
+/* Main seris start */
+#main {
+    background-image: url(../img/main-bg.png);
+    background-size: 100%;
+}
+
+.main-warp__title h1 {
+    padding: 100px 0;
+    color: #143AA2;
+    font-size: 60px;
+    font-family: "Inter";
+    font-weight: 600;
+    line-height: 120%;
+    max-width: 738px;
+}
+
+.main-wrap__button {
+    padding-bottom: 326px;
+}
+
+.main-wrap__button a {
+    display: inline-flex;
+    padding: 10px 20px 12px 20px;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 2px;
+    background: #C2202E;
+    color: #FFF;
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 500;
+    position: relative;
+}
+
+.main-wrap__button a::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -5px;
+    width: 2px;
+    height: 49px;
+    background: #143AA2;
+}
+
+.main-wrap__button a::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    right: -5px;
+    width: 214px;
+    height: 2px;
+    background: #143AA2;
+}
+
+/* Main seris end */
+
+/* reckoning seris start */
+#reckoning {
+    background: var(--unnamed, #143AA2);
+}
+
+.reckoning-warp__cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.reckoning-warp__card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.reckoning-card__text {
+    color: var(--unnamed, #F3F3F3);
+    text-align: center;
+    font-size: 12px;
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+/* reckoning seris end */
+
+/* About Us seris start */
+.about-warp h2 {
+    padding: 160px 0 100px 0;
+}
+
+.about-warp__card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-info__text {
+    color: var(--unnamed, #111D4A);
+    font-size: 22px;
+    font-family: "Inter";
+    line-height: 130%;
+    width: 548px;
+}
+
+.about-card__info {
+    position: relative;
+}
+
+.about-card__info::before {
+    position: absolute;
+    content: "";
+    top: -24px;
+    left: -37px;
+    width: 2px;
+    height: 380px;
+    background: #143AA2;
+}
+
+.about-card__info::after {
+    content: "";
+    position: absolute;
+    top: -26px;
+    right: -6px;
+    width: 591px;
+    height: 2px;
+    background: #143AA2;
+}
+
+.about-card__img {
+    position: relative;
+}
+
+.about-card__img::before {
+    position: absolute;
+    content: "";
+    top: -27px;
+    right: -37px;
+    width: 2px;
+    height: 386px;
+    background: #143AA2;
+}
+
+.about-card__img::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    right: -37px;
+    width: 591px;
+    height: 2px;
+    background: #143AA2;
+}
+
+/* About Us seris end */
+
+/* Advantages seris start */
+.advantages-wrap__title {
+    margin: 200px 0 60px 0;
+}
+
+.advantages-warp__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-card__number p {
+    border: 2px #143AA2 solid;
+    border-top-right-radius: 5px;
+    border-start-start-radius: 5px;
+    transform: translateY(2px);
+    padding: 0 80px 0 40px;
+    border-bottom: none;
+    color: #143AA2;
+    font-size: 16px;
+    font-family: "Inter";
+    line-height: 130%;
+}
+
+.advantages-card__info {
+    width: 216px;
+    height: 160px;
+    border: 2px #143AA2 solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-start-end-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+.advantages-card__text {
+    padding: 20px 20px 0 20px;
+    width: 190px;
+    flex-direction: column;
+    color: var(--unnamed, #143AA2);
+    font-size: 18px;
+    font-family: "Inter";
+    line-height: 130%;
+}
+
+.advantages-info__img {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.advantages-card__button a {
+    display: flex;
+    padding: 10px 20px 12px 20px;
+    width: 1175px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    gap: 10px;
+    border-radius: 2px;
+    background: #C2202E;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 500;
+    margin-top: 60px;
+    position: absolute;
+}
+
+.advantages-card__button a::after {
+    border-bottom: 2px solid #143AA2;
+    position: absolute;
+    content: "";
+    width: 1175px;
+    height: 2px;
+    bottom: -15%;
+}
+
+/* Advantages seris end */
+
+/* Schedule seris start */
+.schedule-warp__title {
+    margin: 260px 0 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule-warp__title h2 {
+    color: var(--unnamed, #143AA2);
+    font-size: 40px;
+    font-family: "Inter";
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.schedule-warp__title a {
+    color: var(--unnamed, #143AA2);
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 600;
+    line-height: 110%;
+    text-decoration-line: underline;
+}
+
+.schedule-card {
+    border: solid 2px #143AA2;
+    position: relative;
+}
+
+.scheulde-card__title {
+    max-width: 585px;
+    display: flex;
+    height: 84px;
+    border-radius: 2px;
+    background: #143AA2;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+.scheulde-card__title h4 {
+    padding-left: 40px;
+    color: var(--unnamed, #FFF);
+    text-align: center;
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.scheulde-card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 0 60px 37px;
+}
+
+.scheulde-card__text p {
+    color: var(--unnamed, #111D4A);
+    font-size: 16px;
+    font-family: "Inter";
+    line-height: 130%;
+}
+
+.schedule-text__point {
+    position: relative;
+}
+
+.schedule-text__point::before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    top: 41%;
+    left: -4%;
+    background: #143AA2;
+}
+
+.scheulde-card__item {
+    position: absolute;
+    color: var(--unnamed, #143AA2);
+    font-size: 14px;
+    font-family: "Inter";
+    line-height: 130%;
+    text-decoration-line: underline;
+    bottom: 5%;
+    right: 4%;
+}
+
+/* Schedule seris end */
+
+/* News seris start */
+
+.news-warp__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-warp__title h2 {
+    color: var(--unnamed, #143AA2);
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 110%;
+}
+.news-warp__title a{
+    color: var(--unnamed, #143AA2);
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 600;
+    line-height: 110%;
+    text-decoration-line: underline;  
+}
+
+
+
+
+
+
+
+
+/* News seris end */
