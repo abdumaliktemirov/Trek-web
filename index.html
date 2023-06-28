@@ -477,16 +477,15 @@
         <section id="advice">
             <div class="container">
                 <div class="advice-warp">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="advice-wrap__left">
-                                <h2>Нужна консультация?</h2>
-                                <h3>Оставьте заявку, и наш менеджер свяжется с Вами в ближайшее время</h3>
-                                <img src="./img/advice-img.png" alt="advice-img">
-                            </div>
+                    <div class=" advice-warp__section">
+                        <div class="advice-wrap__left">
+                            <h2 class="advice-wrap__title">Нужна консультация?</h2>
+                            <h3 class="advice-warp__text">Оставьте заявку, и наш менеджер свяжется с Вами в
+                                ближайшее время</h3>
+                            <img class="advice-warp__img" src="./img/advice-img.png" alt="advice-img">
                         </div>
-                        <div class="col-lg-6">
-                            <form>
+                        <div class="advice-wrap__right">
+                            <form class="advice-right__form">
                                 <label for="username"></label>
                                 <input type="text" id="username" placeholder="Имя">
                                 <label for="call"></label>
@@ -494,17 +493,68 @@
                                 <label for="email"></label>
                                 <input type="email" id="email" placeholder="E-mail">
                             </form>
+                            <button class="advice-card__btn">Отправить</button>
+                            <p class="advice-right__text">Нажимая кнопку, Вы даете согласие на обработку персональных
+                                данных</p>
                         </div>
-                        <button class="advice-card__btn">Отправить</button>
-                        <p>Нажимая кнопку, Вы даете согласие на обработку персональных данных</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Advice seris end -->
 
-
-
+        <!-- Footer seris start -->
+        <footer id="footer">
+            <div class="container">
+                <div class="footer_wrap">
+                    <div class="footer-warp__serch">
+                        <form class="footer_warp__form">
+                            <input type="search" id="serch" placeholder="Поиск">
+                            <label for="serch"><img src="./img/log/header-serch.svg" alt="header-serch"></label>
+                        </form>
+                        <a class="footer-warp__email" href="#!">info@email.com</a>
+                        <div class="footer-info__whatsap">
+                            <a class="footer-whatsap__us" href="#!">
+                                <span>Напишите нам</span>
+                                <span>на WhatsApp</span>
+                            </a>
+                            <div class="footer-whatsap__log">
+                                <img src="./img/log/logistics-whatsapp.svg" alt="">
+                            </div>
+                        </div>
+                        <a class="footer-warp__link" href="#!">8 (383) 123-45-67</a>
+                        <a class="footer-warp__link" href="#!">Новосибирск</a>
+                        <a class="footer-warp__btn" href="#!">Заказать звонок</a>
+                    </div>
+                    <div class="footer-warp__delivery">
+                        <p class="footer_warp__text">Автодоставка</p>
+                        <p class="footer_warp__text">Контейнерные перевозки</p>
+                        <p class="footer_warp__text">Доставка сборных грузов на месторождения</p>
+                        <p class="footer_warp__text">Доставка продуктов на месторождения</p>
+                        <p class="footer_warp__text">Аренда легковой техники</p>
+                        <p class="footer_warp__text">Перевозки в Якутию</p>
+                    </div>
+                    <div class="footer-warp__about">
+                        <p class="footer_delivery__text">О компании</p>
+                        <p class="footer_delivery__text">Контакты</p>
+                        <p class="footer_delivery__text">Новости</p>
+                        <p class="footer_delivery__text">Статьи</p>
+                        <p class="footer_delivery__text">Тарифы</p>
+                    </div>
+                    <div class="footer-warp__documents">
+                        <p class="footer_warp__text">FAQ</p>
+                        <p class="footer_warp__text">Документы</p>
+                        <p class="footer_warp__text">Условия перевозок</p>
+                        <p class="footer_warp__text">Дополнительные услуги</p>
+                    </div>
+                </div>
+                <div class="footer-bottom__logo">
+                    <img src="./img/log/footer-logo.svg" alt="footer-img">
+                    <p class="footer-logo__text">Все права защищены. 2023</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer seris end -->
 
     </div>
     <!-- Libs js -->
